@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          content: Text(
+          content: const Text(
             '¡QUE VIVA EL AMOOOR!',
             style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           actions: [
             TextButton(
-              child: Text(':3',
+              child: const Text(':3',
               style: TextStyle(
                 fontSize: 27.0
               ),
@@ -85,34 +85,34 @@ class _MyHomePageState extends State<MyHomePage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
-                  onPressed: () => _showAlert(context), 
-                  child: Text(
+                  onPressed: () => _showAlert(context),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(255, 5, 248, 14),
+                    minimumSize: Size(_buttonWidth, _buttonHeight),
+                  ), 
+                  child: const Text(
                     'SI',
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 30.0,
                       fontWeight: FontWeight.w600,
                       color: Colors.black,
                     ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 5, 248, 14),
-                    minimumSize: Size(_buttonWidth, _buttonHeight),
                   ),
                 ),
                 const Padding(padding: EdgeInsets.only(right: 20.0)),
                 ElevatedButton(
-                  onPressed: _increaseSize, 
-                  child: Text(
+                  onPressed: _increaseSize,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(255, 241, 18, 2),
+                    minimumSize: const Size(100.0, 50.0),
+                  ), 
+                  child: const Text(
                     'NO',
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 30.0,
                       fontWeight: FontWeight.w600,
                       color: Colors.black,
                     ),
-                  ),
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromARGB(255, 241, 18, 2),
-                    minimumSize: Size(100.0, 50.0),
                   ),
                 ),
               ],
