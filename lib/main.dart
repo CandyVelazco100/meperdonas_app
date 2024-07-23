@@ -31,8 +31,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _increaseSize() {
     setState(() {
-      _buttonWidth += 10.0;
-      _buttonHeight += 5.0;
+      _buttonWidth += 15.0;
+      _buttonHeight += 10.0;
     });
   }
 
